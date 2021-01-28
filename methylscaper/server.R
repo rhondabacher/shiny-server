@@ -1,3 +1,4 @@
+library(methylscaper)
 server <- function(input, output) {
 
   actionsLog <- reactiveValues(log = c("")) # logs the actions taken wrt the plot
