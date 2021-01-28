@@ -57,8 +57,8 @@ ui <- navbarPage("methylscaper",
                                      tabPanel( "Seriation",
                                                sidebarLayout(
                                                  sidebarPanel(
-                                                   fileInput("sm_gch_file", label = "GCH Data file input"),
-                                                   fileInput("sm_hcg_file", label = "HCG Data file input"),
+                                                   fileInput("sm_gch_file", label = "GCH Data file input", accept= c(".csv", ".txt", ".tsv")),
+                                                   fileInput("sm_hcg_file", label = "HCG Data file input", accept= c(".csv", ".txt", ".tsv")),
                                                    selectInput("sm_ser_method", label = "Seriation Method:",
                                                                choices = c("PCA", "ARSA")),
                                                    selectInput("sm_refine_method", label = "Refinement Method:",
